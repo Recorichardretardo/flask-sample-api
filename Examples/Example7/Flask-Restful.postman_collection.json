@@ -1,0 +1,192 @@
+{
+	"id": "3c4370a0-55c0-4f48-5137-46ef19450122",
+	"name": "Flask-Restful",
+	"description": "",
+	"order": [
+		"42c74510-6fa1-f8d1-dd3e-8143488a49d7",
+		"e644ed26-ffd7-d7c0-31db-3bd170375fe4",
+		"d00606d6-bde9-0fa6-d580-a52d487e9f4e",
+		"6e6f463e-3075-3876-0ab1-79db0179ff23",
+		"0c7bf8db-cb73-7d20-c4e3-08d8729ef37e",
+		"d6f27f42-6fe7-2c59-5cac-85eb14b16359"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1586625639569,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "0c7bf8db-cb73-7d20-c4e3-08d8729ef37e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/item/chair",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1586634831104,
+			"name": "/item/<name>",
+			"description": "This will create a new item or update an existing item.",
+			"collectionId": "3c4370a0-55c0-4f48-5137-46ef19450122",
+			"responses": [],
+			"rawModeData": "{\n\t\"price\":59.99\n}"
+		},
+		{
+			"id": "42c74510-6fa1-f8d1-dd3e-8143488a49d7",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/items",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "3c4370a0-55c0-4f48-5137-46ef19450122",
+			"data": null,
+			"dataMode": "params",
+			"name": "/items",
+			"description": "This should return a list of items , each in JSON format.",
+			"descriptionFormat": "html",
+			"time": 1586625825454,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "6e6f463e-3075-3876-0ab1-79db0179ff23",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/auth",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1586632379325,
+			"name": "/auth",
+			"description": "This will create a new item. If the item already exists, it will fail.",
+			"collectionId": "3c4370a0-55c0-4f48-5137-46ef19450122",
+			"responses": [],
+			"rawModeData": "{\n\t\"username\":\"bob\",\n\t\"password\":\"asdf\"\n}"
+		},
+		{
+			"id": "d00606d6-bde9-0fa6-d580-a52d487e9f4e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/item/chair",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1586627506709,
+			"name": "/item/<name>",
+			"description": "This will create a new item. If the item already exists, it will fail.",
+			"collectionId": "3c4370a0-55c0-4f48-5137-46ef19450122",
+			"responses": [],
+			"rawModeData": "{\n\t\"price\":15.99\n}"
+		},
+		{
+			"id": "d6f27f42-6fe7-2c59-5cac-85eb14b16359",
+			"headers": "//Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://localhost:8080/item/chair",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1586633525308,
+			"name": "/item/<name>",
+			"description": "This will delete an item,uniquely identified by name.",
+			"collectionId": "3c4370a0-55c0-4f48-5137-46ef19450122",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "e644ed26-ffd7-d7c0-31db-3bd170375fe4",
+			"headers": "Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1ODY2MzM2OTEsImlhdCI6MTU4NjYzMzM5MSwibmJmIjoxNTg2NjMzMzkxLCJpZGVudGl0eSI6MX0.jldvf76qkR0DgYoBXFCc8b-cTiWHIwLcnhuwRa_f5Bg\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1ODY2MzM2OTEsImlhdCI6MTU4NjYzMzM5MSwibmJmIjoxNTg2NjMzMzkxLCJpZGVudGl0eSI6MX0.jldvf76qkR0DgYoBXFCc8b-cTiWHIwLcnhuwRa_f5Bg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/item/chair",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1586633421251,
+			"name": "/item/<name>",
+			"description": "This will return one specific item, uniquely identified by its name. No items two items may have the same name.",
+			"collectionId": "3c4370a0-55c0-4f48-5137-46ef19450122",
+			"responses": []
+		}
+	]
+}
